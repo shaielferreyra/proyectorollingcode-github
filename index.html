@@ -20,507 +20,287 @@
   <body>
     <div class="container-fluid contendorPrincipal">
       <div class="row">
-        <!-- SECCION HEADER - NAV´S -->
+       <!-- SECCION HEADER - NAV´S -->
+			<header class="bg-#0e0e0e contenedorHeader custom-header ">
+				<nav class="navbar navbar-expand-md bg-darki contendorNavegadorUno">
+					<div class="container-fluid">
+						<a class="col-md-4 navbar-brand" href="#">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSahB0ojNDdULbVdcVcRGJKSZr0cDGRhEcg&s"
+								alt="Logo" class="rounded rounded-circle" width="70" />
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="col-md-8 justify-content-between navbar-collapse" id="navbarNav">
+							<form class="col-md-6 d-flex align-items-center me-2" role="Buscar">
+								<input class="form-control me-2" type="search" placeholder="Buscar productos"
+									aria-label="Buscar productos" />
+								<button class="btn bg-darki" type="submit">
+									Buscar
+								</button>
+							</form>
+							<ul class="navbar-nav pe-4">
+								<div class="contendorlI d-flex">
+									<li class="nav-item">
+										<a class="nav-link" href="./paginas/ingresar.html" id="iniciarSesion">
+											<i class="bi bi-person-video"></i> Ingresá
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="./paginas/carrito.html" id="carrito">
+											<i class="bi bi-cart3"></i> Carrito
+										</a>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!-- Menú adicional visible en dispositivos móviles -->
+				<div class="contenedorUls bg-darki2">
+					<ul class="nav justify-content-center d-flex">
+						<li class="mb-20">
+							<a class="" href="./index.html">Productos</a>
+						</li>
+						<li class="mb-20">
+							<a class="" href="#informacion">Información</a>
+						</li>
+						<li class="mb-20">
+							<a class="" href="#armatupc">Arma tu PC</a>
+						</li>
+						<li class="mb-20">
+							<a class="" href="#contacto">Contácto</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- SECCION MAIN -->
+			<main class="container-fluid mt-2 mb-2 p-3 contenedorPadre">
+				<div class="row">
+					<div class="row mt-3 d-flex justify-content-center align-items-center">
+						<!-- Carrousel -->
+						<div id="carouselExampleCaptions" class="carousel slide">
+							<div class="carousel-indicators">
+							  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							</div>
+							<div class="carousel-inner">
+							  <div class="carousel-item active">
+								<img src="https://compragamer.com/sorteogamer/assets/images/dia_del_gamer_landing_banner_desktop.jpg" class="d-block w-100" alt="..." width="1280" height="760">
+								<div class="carousel-caption d-none d-md-block">
+								  <h5>Imperdibles sorteo por el dia del gamer.</h5>
+								  <p>Registrate para recibir  mas informacion sobre esta super oportunidad!!!</p>
+								</div>
+							  </div>
+							  <div class="carousel-item">
+								<img src="https://scontent.ftuc1-2.fna.fbcdn.net/v/t39.30808-6/465609958_9157611694260888_6452301085661356713_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=c5xoOLLbwY8Q7kNvgG8er7-&_nc_zt=23&_nc_ht=scontent.ftuc1-2.fna&_nc_gid=A0gFmYpitwiXtQWy9StDvV6&oh=00_AYAYZf1bTnIC7Rvd9p1RCFoCiDlMQNu4ok7z3uS1RPomUw&oe=674569CB" class="d-block w-100" alt="..." width="1280" height="760">
+								<div class="carousel-caption d-none d-md-block">
+								  <h5>Increible promocion.</h5>
+								  <p>Contactanos para informacion personalizada.</p>
+								</div>
+							  </div>
+							  <div class="carousel-item">
+								<img src="https://scontent.ftuc1-1.fna.fbcdn.net/v/t39.30808-6/465680697_9158538824168175_3023120055666700158_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZR51Mjna_e4Q7kNvgGPxpra&_nc_zt=23&_nc_ht=scontent.ftuc1-1.fna&_nc_gid=ANGoJxr60fyXC-LhGO2a_7g&oh=00_AYDP6Sfa1BsY3a82n_48Yk0iJ3Ie8ArIhnqGIMsR7DoOkQ&oe=6745665D" class="d-block w-100" alt="..." width="1280" height="760">
+								<div class="carousel-caption d-none d-md-block">
+								  <h5>Increible promocion.</h5>
+								  <p>Puedes armar tu pc desde 0 por esta paguina, ¿que estas esperando? </p>
+								</div>
+							  </div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Next</span>
+							</button>
+						  </div>
+						
+						<!-- Contenedor Productos -->
+						<div class="col-lg-7 col-xl-6 contenedor-productos">
+							<div class="tarjeta-producto-principal">
+								<img src="assets/img/card-images/Principal_2_b34fbd06-8c42-45e0-bab2-46cc528bdcd9.jpg"
+									alt="" />
+								<p class="d-none d-md-block">Procesador Amd Ryzen 9000</p>
+							</div>
+							<div class="tarjeta-producto">
+								<img src="assets/img/card-images/Secundaria_11_ba608bb4-e8e5-4bb8-8ac6-54048caa097e.jpg"
+									alt="" />
+								<p class="d-none d-md-block">Notebook</p>
+							</div>
+							<div class="tarjeta-producto">
+								<img src="assets/img/card-images/Secundaria_14_5b464f69-a717-4140-9915-5f9a86e49c67.jpg"
+									alt="" />
+								<p class="d-none d-md-block">Monitor</p>
+							</div>
+							<div class="tarjeta-producto">
+								<img src="assets/img/card-images/Secundaria_8_c03cb82a-e2fc-4fcd-b2b8-2731fdebe5b6.jpg"
+									class="rounded" alt="" />
+								<p class="d-none d-md-block">Tarjeta Grafica</p>
+							</div>
+							<div class="tarjeta-producto">
+								<img src="assets/img/card-images/Secundaria_18_c1f4ebcb-cfef-42fb-8380-238ed36713ec.jpg"
+									alt="" class="rounded" />
+								<p class="d-none d-md-block">Gabinete</p>
+							</div>
+							<div class="tarjeta-producto">
+								<img src="assets/img/card-images/Secundaria_19_69d37fe1-101f-4464-acfe-73999b915186.jpg"
+									alt="" class="rounded" />
+								<p class="d-none d-md-block">Impresora</p>
+							</div>
+							<div class="tarjeta-producto">
+								<img src="assets/img/card-images/Secundaria_6_2b00e244-bd0c-438e-9b8a-d658889fc33f.jpg"
+									alt="" class="rounded" />
+								<p class="d-none d-md-block">Mother</p>
+							</div>
+							<div class="tarjeta-producto">
+								<img src="assets/img/card-images/Secundaria_5_9b05467c-e016-411f-981a-79751019f62c.jpg"
+									alt="" class="rounded" />
+								<p class="d-none d-md-block">Memoria Ram</p>
+							</div>
+							<div class="tarjeta-producto">
+								<img src="assets/img/card-images/Secundaria_9_396a870d-1002-498d-b4b8-60a1d96dad2d.jpg"
+									alt="" class="rounded" />
+								<p class="d-none d-md-block">Fuente de Poder</p>
+							</div>
+						</div>
+						<!-- Contenedor Publicidad -->
+						<div class="col-lg-4 col-xl-4 d-flex justify-content-center align-items-center contendorPublicidad">
+							<div class="contenedor-imagen">
+								<iframe src="https://www.youtube.com/embed/FIK49iC1EwE?si=orEg9tH9WjNUXL6n" height="315" autoplay; frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- SECCION INFORMATIVA -->
+			<section id="informacion" class="container-fluid seccion-servicios py-4">
+				<!-- Contenedor principal con clase d-flex para alineación horizontal y flex-wrap para responsividad -->
+				<div class="row contenedor-servicios d-flex flex-wrap justify-content-center gap-3">
+					<!-- Servicio 1: Cuotas -->
+					<div
+						class="servicio-cuotas col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light">
+						<div class="icono-cuotas text-primary mb-2">
+							<i class="bi bi-credit-card" style="font-size: 2rem"></i>
+						</div>
+						<h6 class="titulo-cuotas fw-bold">Hasta 12 cuotas</h6>
+						<p class="descripcion-cuotas text-muted">Aprovecha en los pagos de tu elección</p>
+					</div>
+					<!-- Servicio 2: Envíos -->
+					<div
+						class="servicio-envios col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light">
+						<div class="icono-envios text-primary mb-2">
+							<i class="bi bi-truck" style="font-size: 2rem"></i>
+						</div>
+						<h6 class="titulo-envios fw-bold">Envíos a todo el país</h6>
+						<p class="descripcion-envios text-muted">Rápido y seguro</p>
+					</div>
+					<!-- Servicio 3: Garantía -->
+					<div
+						class="servicio-garantia col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light">
+						<div class="icono-garantia text-primary mb-2">
+							<i class="bi bi-shield-check" style="font-size: 2rem"></i>
+						</div>
+						<h6 class="titulo-garantia fw-bold">Garantía oficial</h6>
+						<p class="descripcion-garantia text-muted">Hasta 24 meses en todos los productos</p>
+					</div>
+				</div>
+			</section>
+			<!-- SECCION CTA -->
+			<section id="armatupc" class="container-fluid bg-image rounded my-3 d-flex align-items-center px-5">
+				<div class="row contendorRow d-flex align-items-center">
+					<div class="col-10 col-md-8 bg-darki text-white rounded-end p-2 p-md-4">
+						<div>
+							<h3 class="fw-bold mb-3">Armá tu PC</h3>
+							<p class="mb-3">Configurá tu nueva PC sin errores de compatibilidad, seleccionando todos los
+								componentes
+								que deseás.</p>
+							<a href="#" class="btn btn-danger px-3 py-2 text-uppercase">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- SECCION MAPS + CONTACT -->
+			<div id="contacto" class="container my-4 mt-3">
+				<div class="row">
+					<div class="mapa col-md-6 d-flex justify-content-center align-items-center">
+						<div class="caja-ifreme p-3 d-flex justify-content-center align-items-center">
+							<iframe class="img-fuid border border-secondary sm p-3 mb-5 rounded"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210177.03323497504!2d-58.68643283843991!3d-34.60375326833874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1731688781790!5m2!1ses-419!2sar"
+								width="600" height="350" style="border: 0" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+					<div class="formulario col-md-4 p-2 text-primary">
+						<section id="contacto" class="seccion">
+							<div class="container">
+								<h2 class="text-star text-center">Contacto</h2>
+								<form>
+									<div class="mb-3">
+										<label for="nombre" class="form-label">Nombre</label>
+										<input type="text" class="form-control" placeholder="Nombre" />
+									</div>
+									<div class="mb-3">
+										<label for="email" class="form-label">Email</label>
+										<input type="email" class="form-control" placeholder="email" />
+									</div>
+									<div class="mb-3">
+										<label for="mensaje" class="form-label">Mensaje</label>
+										<textarea class="form-control" placeholder="introduce un mesaje "></textarea>
+									</div>
+									<button type="submit" class="btn btn-primary">Enviar</button>
+								</form>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<!-- SECCION FOOTER -->
+			<footer class="py-4">
+				<div class="row d-flex flex-column justify-content-center align-items-center text-center">
+					<div class="logo mb-3">
+						<img src="https://scontent.ftuc1-1.fna.fbcdn.net/v/t39.30808-6/462655853_962638735670494_6516497850488536180_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=ddoccxMbJJYQ7kNvgHxvIBq&_nc_zt=23&_nc_ht=scontent.ftuc1-1.fna&_nc_gid=AZK0ehwZYNPiaY61hSQ3gfr&oh=00_AYDVVCv3RpR6tLjMTvSRdh9HXngBhSOdpwLlvf6XRieXGw&oe=67458C2E" alt="Logo" class="img-fluid" width="500" />
+					</div>
+					<div class="social-icons d-flex justify-content-center gap-3 mb-4">
+						<a href="#" class="text-white rounded-circle p-2">
+							<i class="bi bi-facebook"></i>
+						</a>
+						<a href="#" class="text-white rounded-circle p-2">
+							<i class="bi bi-twitter"></i>
+						</a>
+						<a href="#" class="text-white rounded-circle p-2">
+							<i class="bi bi-instagram"></i>
+						</a>
+						<a href="#" class="text-white rounded-circle p-2">
+							<i class="bi bi-linkedin"></i>
+						</a>
+					</div>
+					<div class="row w-100 d-flex justify-content-center">
+						<div class="col-10 col-md-4 mb-3">
+							<a href="#" class="text-white d-block">Política de privacidad</a>
+							<a href="#" class="text-white d-block">Términos y condiciones</a>
+						</div>
+						<div class="col-10 col-md-4 mb-3 contact-info">
+							<p class="text-white">
+								Número de contacto:
+								<a href="tel:+123456789" class="text-white">+53 3865 320226 </a>
+							</p>
+						</div>
+					</div>
+					<hr class="my-4" />
+					<p class="copyright mt-3">Copyright &copy;2024; Diseñado por <span class="Designer">Bruno, Shaiel, Ruben, Delfina, Gonzalo</span></p>
+				</div>
+			</footer>
+		</div>
+	</div>
 
-        <header class="bg-#0e0e0e contenedorHeader custom-header ">
-          <nav class="navbar navbar-expand-md bg-darki contendorNavegadorUno">
-            <div class="container-fluid">
-              <a class="col-md-4 navbar-brand" href="#">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSahB0ojNDdULbVdcVcRGJKSZr0cDGRhEcg&s"
-                  alt="Logo" class="rounded rounded-circle" width="70" />
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="col-md-8 justify-content-between navbar-collapse" id="navbarNav">
-                <form class="col-md-6 d-flex align-items-center me-2" role="Buscar">
-                  <input class="form-control me-2" type="search" placeholder="Buscar productos"
-                    aria-label="Buscar productos" />
-                  <button class="btn bg-darki" type="submit">
-                    Buscar
-                  </button>
-
-        <header class="bg-#0e0e0e contenedorHeader custom-header">
-          <nav class="navbar navbar-expand-md bg-darki contendorNavegadorUno">
-            <div class="container-fluid">
-              <a class="col-md-4 navbar-brand" href="#">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSahB0ojNDdULbVdcVcRGJKSZr0cDGRhEcg&s"
-                  alt="Logo"
-                  class="rounded rounded-circle"
-                  width="70"
-                />
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div
-                class="col-md-8 justify-content-between navbar-collapse"
-                id="navbarNav"
-              >
-                <form
-                  class="col-md-6 d-flex align-items-center me-2"
-                  role="Buscar"
-                >
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Buscar productos"
-                    aria-label="Buscar productos"
-                  />
-                  <button class="btn bg-darki" type="submit">Buscar</button>
-
-                </form>
-                <ul class="navbar-nav pe-4">
-                  <div class="contendorlI d-flex">
-                    <li class="nav-item">
-
-                      <a class="nav-link" href="./paginas/ingresar.html" id="iniciarSesion">
-
-                      <a
-                        class="nav-link"
-                        href="./paginas/ingresar.html"
-                        id="iniciarSesion"
-                      >
-
-                        <i class="bi bi-person-video"></i> Ingresá
-                      </a>
-                    </li>
-                    <li class="nav-item">
-
-                      <a class="nav-link" href="./paginas/carrito.html" id="carrito">
-
-                      <a
-                        class="nav-link"
-                        href="./paginas/carrito.html"
-                        id="carrito"
-                      >
-
-                        <i class="bi bi-cart3"></i> Carrito
-                      </a>
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <!-- Menú adicional visible en dispositivos móviles -->
-          <div class="contenedorUls bg-darki2">
-            <ul class="nav justify-content-center d-flex">
-              <li class="mb-20">
-                <a class="" href="./index.html">Productos</a>
-              </li>
-              <li class="mb-20">
-                <a class="" href="#informacion">Información</a>
-              </li>
-              <li class="mb-20">
-                <a class="" href="#armatupc">Arma tu PC</a>
-              </li>
-              <li class="mb-20">
-                <a class="" href="#contacto">Contácto</a>
-              </li>
-            </ul>
-          </div>
-        </header>
-
-        <!-- SECCION INFORMATIVA -->
-        <section id="informacion" class="container-fluid seccion-servicios py-4">
-          <!-- Contenedor principal con clase d-flex para alineación horizontal y flex-wrap para responsividad -->
-          <div class="row contenedor-servicios d-flex flex-wrap justify-content-center gap-3">
-            <!-- Servicio 1: Cuotas -->
-            <div
-              class="servicio-cuotas col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light">
-              <div class="icono-cuotas text-primary mb-2">
-                <i class="bi bi-credit-card" style="font-size: 2rem"></i>
-              </div>
-              <h6 class="titulo-cuotas fw-bold">Hasta 12 cuotas</h6>
-              <p class="descripcion-cuotas text-muted">Aprovecha en los pagos de tu elección</p>
-            </div>
-            <!-- Servicio 2: Envíos -->
-            <div
-              class="servicio-envios col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light">
-
-
-        <!-- Main -->
-        <main class="container-fluid">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-8 rojo">
-              <div
-                class="contenedor-carrousel d-flex flex-column justify-content-center mt-5"
-              >
-                <div
-                  id="carouselExampleIndicators"
-                  class="carousel slide mx-auto"
-                  data-bs-ride="carousel"
-                  data-bs-interval="3000"
-                >
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleIndicators"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleIndicators"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleIndicators"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        src="assets/img/carrousel-images/DC_20241018174428_XdEjhTqS.jpg"
-                        class="d-block rounded img-fluid"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="assets/img/carrousel-images/DC_20241018174550_a2KBtWsN.jpg"
-                        class="d-block rounded img-fluid"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="assets/img/carrousel-images/DC_20241022151949_kdqhRLmI.jpg"
-                        class="d-block rounded img-fluid"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-                <div class="contenedor-productos">
-                  <div class="tarjeta-producto-principal">
-                    <img
-                      src="assets/img/card-images/Principal_2_b34fbd06-8c42-45e0-bab2-46cc528bdcd9.jpg"
-                      alt=""
-                      class="d-block w-5"
-                    />
-                    <p class="texto-producto">Procesador Amd Ryzen 9000</p>
-                  </div>
-                  <div class="tarjeta-producto">
-                    <img
-                      src="assets/img/card-images/Secundaria_14_5b464f69-a717-4140-9915-5f9a86e49c67.jpg"
-                      alt=""
-                    />
-                    <p class="texto-producto">Notebook</p>
-                  </div>
-                  <div class="tarjeta-producto">
-                    <img
-                      src="assets/img/card-images/Secundaria_14_5b464f69-a717-4140-9915-5f9a86e49c67.jpg"
-                      alt=""
-                    />
-                    <p class="texto-producto">Monitor</p>
-                  </div>
-                  <div class="tarjeta-producto">
-                    <img
-                      src="assets/img/card-images/Secundaria_8_c03cb82a-e2fc-4fcd-b2b8-2731fdebe5b6.jpg"
-                      class="rounded"
-                      alt=""
-                    />
-                    <p class="texto-producto">Tarjeta Grafica</p>
-                  </div>
-                  <div class="tarjeta-producto">
-                    <img
-                      src="assets/imag/card-images/Secundaria_18_c1f4ebcb-cfef-42fb-8380-238ed36713ec.jpg"
-                      alt=""
-                      class="rounded"
-                    />
-                    <p class="texto-producto">Gabinete</p>
-                  </div>
-                  <div class="tarjeta-producto">
-                    <img
-                      src="assets/img/card-images/Secundaria_19_69d37fe1-101f-4464-acfe-73999b915186.jpg"
-                      alt=""
-                      class="rounded"
-                    />
-                    <p class="texto-producto">Impresora</p>
-                  </div>
-                  <div class="tarjeta-producto">
-                    <img
-                      src="assets/img/card-images/Secundaria_6_2b00e244-bd0c-438e-9b8a-d658889fc33f.jpg"
-                      alt=""
-                      class="rounded"
-                    />
-                    <p class="texto-producto">Mother</p>
-                  </div>
-                  <div class="tarjeta-producto">
-                    <img
-                      src="assets/img/card-images/Secundaria_5_9b05467c-e016-411f-981a-79751019f62c.jpg"
-                      alt=""
-                      class="rounded"
-                    />
-                    <p class="texto-producto">Memoria Ram</p>
-                  </div>
-                  <div class="tarjeta-producto">
-                    <img
-                      src="assets/img/card-images/Secundaria_9_396a870d-1002-498d-b4b8-60a1d96dad2d.jpg"
-                      alt=""
-                      class="rounded"
-                    />
-                    <p class="texto-producto">Fuente de Poder</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 azul d-none d-lg-block">
-              <div class="contenedor-publicidad">
-                <div class="container mt-5">
-                  <div
-                    id="carouselExample"
-                    class="carousel slide"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-indicators">
-                      <button
-                        type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                      ></button>
-                      <button
-                        type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide-to="1"
-                      ></button>
-                      <button
-                        type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide-to="2"
-                      ></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <!-- Imagen 1 -->
-                      <div class="carousel-item active">
-                        <img
-                          src="images/publicity-images/900w-ctypxM8xNL8.webp"
-                          class="d-block w-100"
-                          alt="Imagen 1"
-                        />
-                      </div>
-                      <!-- Imagen 2 -->
-                      <div class="carousel-item">
-                        <img
-                          src="images/publicity-images/900w-x_9-vJW3LB8.webp"
-                          class="d-block w-100"
-                          alt="Imagen 2"
-                        />
-                      </div>
-                      <!-- Imagen 3 -->
-                      <div class="carousel-item">
-                        <img
-                          src="images/publicity-images/canva-historia-de-instagram-descuentos-black-friday-atrevido-rosa-5NMBJUzekoM.jpg"
-                          class="d-block w-100"
-                          alt="Imagen 3"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <!-- SECCION INFORMATIVA -->
-        <section
-          id="informacion"
-          class="container-fluid seccion-servicios py-4"
-        >
-          <!-- Contenedor principal con clase d-flex para alineación horizontal y flex-wrap para responsividad -->
-          <div
-            class="row contenedor-servicios d-flex flex-wrap justify-content-center gap-3"
-          >
-            <!-- Servicio 1: Cuotas -->
-            <div
-              class="servicio-cuotas col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light"
-            >
-              <div class="icono-cuotas text-primary mb-2">
-                <i class="bi bi-credit-card" style="font-size: 2rem"></i>
-              </div>
-              <h6 class="titulo-cuotas fw-bold">Hasta 12 cuotas</h6>
-              <p class="descripcion-cuotas text-muted">
-                Aprovecha en los pagos de tu elección
-              </p>
-            </div>
-            <!-- Servicio 2: Envíos -->
-            <div
-              class="servicio-envios col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light"
-            >
-              <div class="icono-envios text-primary mb-2">
-                <i class="bi bi-truck" style="font-size: 2rem"></i>
-              </div>
-              <h6 class="titulo-envios fw-bold">Envíos a todo el país</h6>
-              <p class="descripcion-envios text-muted">Rápido y seguro</p>
-            </div>
-            <!-- Servicio 3: Garantía -->
-            <div
-
-              class="servicio-garantia col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light">
-
-              class="servicio-garantia col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light"
-            >
-
-              <div class="icono-garantia text-primary mb-2">
-                <i class="bi bi-shield-check" style="font-size: 2rem"></i>
-              </div>
-              <h6 class="titulo-garantia fw-bold">Garantía oficial</h6>
-
-              <p class="descripcion-garantia text-muted">Hasta 24 meses en todos los productos</p>
-            </div>
-          </div>
-        </section>
-        <!-- SECCION CTA -->
-        <section id="armatupc" class="container-fluid bg-image rounded my-3 d-flex align-items-center px-5">
-          <div class="row contendorRow d-flex align-items-center">
-            <div class="col-10 col-md-8 bg-darki text-white rounded-end p-2 p-md-4">
-              <div>
-                <h3 class="fw-bold mb-3">Armá tu PC</h3>
-                <p class="mb-3">Configurá tu nueva PC sin errores de compatibilidad, seleccionando todos los
-                  componentes
-                  que deseás.</p>
-                <a href="#" class="btn btn-danger px-3 py-2 text-uppercase">Ver más</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- SECCION MAPS + CONTACT -->
-        <div id="contacto" class="container my-4 mt-3">
-          <div class="row">
-            <div class="mapa col-md-6">
-              <div class="caja-ifreme p-3 d-flex justify-content-center align-items-center">
-                <iframe
-                class="img-fuid border border-secondary sm p-3 mb-5 rounded"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210177.03323497504!2d-58.68643283843991!3d-34.60375326833874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1731688781790!5m2!1ses-419!2sar"
-                width="400"
-                height="350"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-          </div>
-          <div class="formulario col-md-6 p-4 text-center text-primary">
-            <section id="contacto" class="seccion">
-                <div class="container">
-                <h2 class="text-star">Contacto</h2>
-                <form>
-                    <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Nombre"
-                    />
-                    </div>
-                    <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input
-                        type="email"
-                        class="form-control"
-                        placeholder="email"
-                    />
-                    </div>
-                    <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea
-                        class="form-control"
-                        placeholder="introduce un mesaje "
-                    ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-                </div>
-            </section>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 </body>
-</html>
 
-              <p class="descripcion-garantia text-muted">
-                Hasta 24 meses en todos los productos
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECCION CTA -->
-        <section
-          id="armatupc"
-          class="container-fluid bg-image rounded my-3 d-flex align-items-center px-5"
-        >
-          <div class="row contendorRow d-flex align-items-center">
-            <div
-              class="col-10 col-md-8 bg-darki text-white rounded-end p-2 p-md-4"
-            >
-              <div>
-                <h3 class="fw-bold mb-3">Armá tu PC</h3>
-                <p class="mb-3">
-                  Configurá tu nueva PC sin errores de compatibilidad,
-                  seleccionando todos los componentes que deseás.
-                </p>
-                <a href="#" class="btn btn-danger px-3 py-2 text-uppercase"
-                  >Ver más</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECCION MAPS + CONTACT -->
-        <div id="contacto" class="container my-4 mt-3">
-          <div class="row"></div>
-        </div>
-      </div>
-    </div>
-  </body>
 </html>
