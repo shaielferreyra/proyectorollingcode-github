@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="es-Ar">
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Shaiel Ferreyra, Diangel Muñoz, Conrrado Melnik, Leonardo Santillan y Nahuel Jiménez">
-  <meta name="keywords" content="compragamer, gamer, github, proyecto RollingCode, desarrollo web">
-  <meta name="description" content="Página web de compra para gamers, desarrollada por el grupo #2 de la comisión web9">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CompraGamer</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="author"
+      content="Shaiel Ferreyra, Diangel Muñoz, Conrrado Melnik, Leonardo Santillan y Nahuel Jiménez"
+    />
+    <meta
+      name="keywords"
+      content="compragamer, gamer, github, proyecto RollingCode, desarrollo web"
+    />
+    <meta
+      name="description"
+      content="Página web de compra para gamers, desarrollada por el grupo #2 de la comisión web9"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CompraGamer</title>
+  </head>
+  <body>
     <div class="container-fluid contendorPrincipal">
       <div class="row">
         <!-- SECCION HEADER - NAV´S -->
+
         <header class="bg-#0e0e0e contenedorHeader custom-header ">
           <nav class="navbar navbar-expand-md bg-darki contendorNavegadorUno">
             <div class="container-fluid">
@@ -31,16 +41,71 @@
                   <button class="btn bg-darki" type="submit">
                     Buscar
                   </button>
+
+        <header class="bg-#0e0e0e contenedorHeader custom-header">
+          <nav class="navbar navbar-expand-md bg-darki contendorNavegadorUno">
+            <div class="container-fluid">
+              <a class="col-md-4 navbar-brand" href="#">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSahB0ojNDdULbVdcVcRGJKSZr0cDGRhEcg&s"
+                  alt="Logo"
+                  class="rounded rounded-circle"
+                  width="70"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="col-md-8 justify-content-between navbar-collapse"
+                id="navbarNav"
+              >
+                <form
+                  class="col-md-6 d-flex align-items-center me-2"
+                  role="Buscar"
+                >
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar productos"
+                    aria-label="Buscar productos"
+                  />
+                  <button class="btn bg-darki" type="submit">Buscar</button>
+
                 </form>
                 <ul class="navbar-nav pe-4">
                   <div class="contendorlI d-flex">
                     <li class="nav-item">
+
                       <a class="nav-link" href="./paginas/ingresar.html" id="iniciarSesion">
+
+                      <a
+                        class="nav-link"
+                        href="./paginas/ingresar.html"
+                        id="iniciarSesion"
+                      >
+
                         <i class="bi bi-person-video"></i> Ingresá
                       </a>
                     </li>
                     <li class="nav-item">
+
                       <a class="nav-link" href="./paginas/carrito.html" id="carrito">
+
+                      <a
+                        class="nav-link"
+                        href="./paginas/carrito.html"
+                        id="carrito"
+                      >
+
                         <i class="bi bi-cart3"></i> Carrito
                       </a>
                     </li>
@@ -67,6 +132,7 @@
             </ul>
           </div>
         </header>
+
         <!-- SECCION INFORMATIVA -->
         <section id="informacion" class="container-fluid seccion-servicios py-4">
           <!-- Contenedor principal con clase d-flex para alineación horizontal y flex-wrap para responsividad -->
@@ -83,6 +149,250 @@
             <!-- Servicio 2: Envíos -->
             <div
               class="servicio-envios col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light">
+
+
+        <!-- Main -->
+        <main class="container-fluid">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-8 rojo">
+              <div
+                class="contenedor-carrousel d-flex flex-column justify-content-center mt-5"
+              >
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide mx-auto"
+                  data-bs-ride="carousel"
+                  data-bs-interval="3000"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/img/carrousel-images/DC_20241018174428_XdEjhTqS.jpg"
+                        class="d-block rounded img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/carrousel-images/DC_20241018174550_a2KBtWsN.jpg"
+                        class="d-block rounded img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/carrousel-images/DC_20241022151949_kdqhRLmI.jpg"
+                        class="d-block rounded img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="contenedor-productos">
+                  <div class="tarjeta-producto-principal">
+                    <img
+                      src="assets/img/card-images/Principal_2_b34fbd06-8c42-45e0-bab2-46cc528bdcd9.jpg"
+                      alt=""
+                      class="d-block w-5"
+                    />
+                    <p class="texto-producto">Procesador Amd Ryzen 9000</p>
+                  </div>
+                  <div class="tarjeta-producto">
+                    <img
+                      src="assets/img/card-images/Secundaria_14_5b464f69-a717-4140-9915-5f9a86e49c67.jpg"
+                      alt=""
+                    />
+                    <p class="texto-producto">Notebook</p>
+                  </div>
+                  <div class="tarjeta-producto">
+                    <img
+                      src="assets/img/card-images/Secundaria_14_5b464f69-a717-4140-9915-5f9a86e49c67.jpg"
+                      alt=""
+                    />
+                    <p class="texto-producto">Monitor</p>
+                  </div>
+                  <div class="tarjeta-producto">
+                    <img
+                      src="assets/img/card-images/Secundaria_8_c03cb82a-e2fc-4fcd-b2b8-2731fdebe5b6.jpg"
+                      class="rounded"
+                      alt=""
+                    />
+                    <p class="texto-producto">Tarjeta Grafica</p>
+                  </div>
+                  <div class="tarjeta-producto">
+                    <img
+                      src="assets/imag/card-images/Secundaria_18_c1f4ebcb-cfef-42fb-8380-238ed36713ec.jpg"
+                      alt=""
+                      class="rounded"
+                    />
+                    <p class="texto-producto">Gabinete</p>
+                  </div>
+                  <div class="tarjeta-producto">
+                    <img
+                      src="assets/img/card-images/Secundaria_19_69d37fe1-101f-4464-acfe-73999b915186.jpg"
+                      alt=""
+                      class="rounded"
+                    />
+                    <p class="texto-producto">Impresora</p>
+                  </div>
+                  <div class="tarjeta-producto">
+                    <img
+                      src="assets/img/card-images/Secundaria_6_2b00e244-bd0c-438e-9b8a-d658889fc33f.jpg"
+                      alt=""
+                      class="rounded"
+                    />
+                    <p class="texto-producto">Mother</p>
+                  </div>
+                  <div class="tarjeta-producto">
+                    <img
+                      src="assets/img/card-images/Secundaria_5_9b05467c-e016-411f-981a-79751019f62c.jpg"
+                      alt=""
+                      class="rounded"
+                    />
+                    <p class="texto-producto">Memoria Ram</p>
+                  </div>
+                  <div class="tarjeta-producto">
+                    <img
+                      src="assets/img/card-images/Secundaria_9_396a870d-1002-498d-b4b8-60a1d96dad2d.jpg"
+                      alt=""
+                      class="rounded"
+                    />
+                    <p class="texto-producto">Fuente de Poder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 azul d-none d-lg-block">
+              <div class="contenedor-publicidad">
+                <div class="container mt-5">
+                  <div
+                    id="carouselExample"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide-to="1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide-to="2"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <!-- Imagen 1 -->
+                      <div class="carousel-item active">
+                        <img
+                          src="images/publicity-images/900w-ctypxM8xNL8.webp"
+                          class="d-block w-100"
+                          alt="Imagen 1"
+                        />
+                      </div>
+                      <!-- Imagen 2 -->
+                      <div class="carousel-item">
+                        <img
+                          src="images/publicity-images/900w-x_9-vJW3LB8.webp"
+                          class="d-block w-100"
+                          alt="Imagen 2"
+                        />
+                      </div>
+                      <!-- Imagen 3 -->
+                      <div class="carousel-item">
+                        <img
+                          src="images/publicity-images/canva-historia-de-instagram-descuentos-black-friday-atrevido-rosa-5NMBJUzekoM.jpg"
+                          class="d-block w-100"
+                          alt="Imagen 3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- SECCION INFORMATIVA -->
+        <section
+          id="informacion"
+          class="container-fluid seccion-servicios py-4"
+        >
+          <!-- Contenedor principal con clase d-flex para alineación horizontal y flex-wrap para responsividad -->
+          <div
+            class="row contenedor-servicios d-flex flex-wrap justify-content-center gap-3"
+          >
+            <!-- Servicio 1: Cuotas -->
+            <div
+              class="servicio-cuotas col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light"
+            >
+              <div class="icono-cuotas text-primary mb-2">
+                <i class="bi bi-credit-card" style="font-size: 2rem"></i>
+              </div>
+              <h6 class="titulo-cuotas fw-bold">Hasta 12 cuotas</h6>
+              <p class="descripcion-cuotas text-muted">
+                Aprovecha en los pagos de tu elección
+              </p>
+            </div>
+            <!-- Servicio 2: Envíos -->
+            <div
+              class="servicio-envios col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light"
+            >
               <div class="icono-envios text-primary mb-2">
                 <i class="bi bi-truck" style="font-size: 2rem"></i>
               </div>
@@ -91,11 +401,17 @@
             </div>
             <!-- Servicio 3: Garantía -->
             <div
+
               class="servicio-garantia col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light">
+
+              class="servicio-garantia col-10 col-md-3 d-flex flex-column align-items-center text-center border p-3 rounded shadow-sm bg-light"
+            >
+
               <div class="icono-garantia text-primary mb-2">
                 <i class="bi bi-shield-check" style="font-size: 2rem"></i>
               </div>
               <h6 class="titulo-garantia fw-bold">Garantía oficial</h6>
+
               <p class="descripcion-garantia text-muted">Hasta 24 meses en todos los productos</p>
             </div>
           </div>
@@ -168,4 +484,43 @@
       </div>
     </div>
 </body>
+</html>
+
+              <p class="descripcion-garantia text-muted">
+                Hasta 24 meses en todos los productos
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCION CTA -->
+        <section
+          id="armatupc"
+          class="container-fluid bg-image rounded my-3 d-flex align-items-center px-5"
+        >
+          <div class="row contendorRow d-flex align-items-center">
+            <div
+              class="col-10 col-md-8 bg-darki text-white rounded-end p-2 p-md-4"
+            >
+              <div>
+                <h3 class="fw-bold mb-3">Armá tu PC</h3>
+                <p class="mb-3">
+                  Configurá tu nueva PC sin errores de compatibilidad,
+                  seleccionando todos los componentes que deseás.
+                </p>
+                <a href="#" class="btn btn-danger px-3 py-2 text-uppercase"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCION MAPS + CONTACT -->
+        <div id="contacto" class="container my-4 mt-3">
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
